@@ -34,7 +34,7 @@ Vue.use(VueDadataTextarea)
 ```html
 <template>
   <div id="app">
-    <vue-dadata token="dadata_api_key"></vue-dadata>
+    <vue-dadata-textarea token="dadata_api_key"></vue-dadata-textarea>
   </div>
 </template>
 
@@ -44,7 +44,7 @@ import VueDadataTextarea from 'vue-dadata-textarea'
 export default {
   name: 'VueDadataTest',
   components: {
-    'vue-dadata': VueDadataTextarea
+    'vue-dadata-textarea': VueDadataTextarea
   }
 }
 </script>
@@ -65,7 +65,6 @@ export default {
 | inputName  | No  |  string  |  Input name attribute |
 | inputType  | No  |  string  |  Input type; `input` or `textarea` |
 | textareaRows  | No  |  Number  |  Rows number for textarea |
-
 | fromBound  | No  |  string  |  Dadata bound type FROM |
 | toBound  | No  |  string  |  Dadata bound type TO |
 | highlightClassName  | No  |  string  |  CSS class name applied to highlighted text |
