@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vue-dadata
+    <vue-dadata-textarea
       ref="dadata"
       :token="token"
       @handle-error="handleError"
@@ -12,18 +12,18 @@
       highlight-tag="span"
       :on-change="changed"
       :location-options="locations"
-    ></vue-dadata>
+    ></vue-dadata-textarea>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Ref } from 'vue-property-decorator';
-import VueDadata from '@/components/VueDadata.vue';
+import VueDadataTextarea from '@/components/VueDadataTextarea.vue';
 
 @Component({
   name: 'App',
   components: {
-    'vue-dadata': VueDadata,
+    'vue-dadata-textarea': VueDadataTextarea,
   },
 })
 export default class App extends Vue {

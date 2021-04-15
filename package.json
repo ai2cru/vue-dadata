@@ -1,13 +1,13 @@
 {
-  "name": "vue-dadata",
-  "version": "1.4.10",
+  "name": "vue-dadata-textarea",
+  "version": "1.4.11",
   "description": "Vue component for hinting addresses using dadata.ru",
   "main": "dist/vuedadatacomponent.umd.js",
   "module": "dist/vuedadatacomponent.esm.js",
   "unpkg": "dist/vuedadatacomponent.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ikloster03/vue-dadata.git"
+    "url": "git+https://github.com/ai2cru/vue-dadata-textarea.git"
   },
   "keywords": [
     "vue",
@@ -31,9 +31,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ikloster03/vue-dadata/issues"
+    "url": "https://github.com/ai2cru/vue-dadata-textarea/issues"
   },
-  "homepage": "https://github.com/ikloster03/vue-dadata#readme",
+  "homepage": "https://github.com/ai2cru/vue-dadata-textarea#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

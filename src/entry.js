@@ -1,11 +1,11 @@
-import VueDadata from './components/VueDadata.vue';
+import VueDadataTextarea from './components/VueDadataTextarea.vue';
 
 const install = Vue => {
   if (install.installed) {
     return;
   }
   install.installed = true;
-  Vue.component('vue-dadata', VueDadata);
+  Vue.component('vue-dadata-textarea', VueDadataTextarea);
 };
 
 const plugin = {
@@ -24,6 +24,6 @@ if (GlobalVue) {
   GlobalVue.use(plugin);
 }
 
-VueDadata.install = install;
+VueDadataTextarea.install = install;
 
-export default VueDadata;
+export default VueDadataTextarea;

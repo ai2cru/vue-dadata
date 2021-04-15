@@ -69,12 +69,12 @@ import Highlighter from 'vue-highlight-words';
 import { Debounce } from 'vue-debounce-decorator';
 
 @Component({
-  name: 'VueDadata',
+  name: 'VueDadataTextarea',
   components: {
     Highlighter,
   },
 })
-export default class VueDadata extends Vue {
+export default class VueDadataTextarea extends Vue {
   @Prop({ type: String, required: true }) public readonly token!: string;
   @Prop(String) public readonly query?: string;
   @Prop(String) public readonly placeholder?: string;

@@ -1,23 +1,22 @@
-# Vue Dadata
+# Vue Dadata Textarea
 
-![Publish](https://github.com/ikloster03/vue-dadata/workflows/Publish/badge.svg)
-[![gitlocalized ](https://gitlocalize.com/repo/3342/whole_project/badge.svg)](https://gitlocalize.com/repo/3342/whole_project?utm_source=badge)
+![Publish](https://github.com/ai2cru/vue-dadata-textarea/workflows/Publish/badge.svg)
 
 It's a vue component for hinting addresses using [DaData.ru](https://dadata.ru).
 
-[Link to RU documentation](https://github.com/ikloster03/vue-dadata/tree/master/ru/README.md)
+[Link to RU documentation](https://github.com/ai2cru/vue-dadata-textarea/tree/master/ru/README.md)
 
 ## Install
 
-[npm package](https://www.npmjs.com/package/vue-dadata)
+[npm package](https://www.npmjs.com/package/vue-dadata-textarea)
 
 ```bash
-$ npm install vue-dadata --save
+$ npm install vue-dadata-textarea --save
 ```
 
-[yarn package](https://yarnpkg.com/en/package/vue-dadata)
+[yarn package](https://yarnpkg.com/en/package/vue-dadata-textarea)
 ```bash
-$ yarn add vue-dadata
+$ yarn add vue-dadata-textarea
 ```
 
 ## Usage
@@ -25,9 +24,9 @@ $ yarn add vue-dadata
 ### Global
 
 ```js
-import VueDadata from 'vue-dadata'
+import VueDadataTextarea from 'vue-dadata-textarea'
 
-Vue.use(VueDadata)
+Vue.use(VueDadataTextarea)
 ```
 
 ### Local
@@ -40,12 +39,12 @@ Vue.use(VueDadata)
 </template>
 
 <script>
-import VueDadata from 'vue-dadata'
+import VueDadataTextarea from 'vue-dadata-textarea'
 
 export default {
   name: 'VueDadataTest',
   components: {
-    'vue-dadata': VueDadata
+    'vue-dadata': VueDadataTextarea
   }
 }
 </script>
@@ -64,7 +63,7 @@ export default {
 | defaultClass  | No  |  string  |  Default class ofr component, default value - `vue-dadata` |
 | classes  | No  |  string  |  Extra classes |
 | inputName  | No  |  string  |  Input name attribute |
-| inputName  | No  |  string  |  Input type; `input` or `textarea` |
+| inputType  | No  |  string  |  Input type; `input` or `textarea` |
 | fromBound  | No  |  string  |  Dadata bound type FROM |
 | toBound  | No  |  string  |  Dadata bound type TO |
 | highlightClassName  | No  |  string  |  CSS class name applied to highlighted text |
