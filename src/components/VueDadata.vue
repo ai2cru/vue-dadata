@@ -1,7 +1,22 @@
 <template>
   <div :class="[defaultClass, ...getClasses()]">
     <div :class="`${defaultClass}__container`">
-      <div :class="`${defaultClass}__search`">
+      <div :class="`${defaultClass}__search`" v-if='inputType === "textarea"'>
+        <textarea
+          :name="inputName"
+          :class="`${defaultClass}__input`"
+          :disabled="disabled"
+          :placeholder="placeholder"
+          v-model="inputQuery"
+          ref="inputText"
+          :autoComplete="autocomplete"
+          @input="onInputChange"
+          @keydown="onKeyPress"
+          @focus="onInputFocus"
+          @blur="onInputBlur"
+        />
+      </div>
+      <div :class="`${defaultClass}__search`" v-else>
         <input
           type="text"
           :name="inputName"
@@ -71,6 +86,7 @@ export default class VueDadata extends Vue {
   @Prop(String) public readonly fromBound?: BoundsType;
   @Prop(String) public readonly toBound?: BoundsType;
   @Prop(String) public readonly inputName?: string;
+  @Prop(String) public readonly inputType?: string;
   @Prop({
     type: Object,
     default: () => ({

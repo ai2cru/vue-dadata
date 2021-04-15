@@ -64,6 +64,7 @@ export default {
 | defaultClass  | No  |  string  |  Default class ofr component, default value - `vue-dadata` |
 | classes  | No  |  string  |  Extra classes |
 | inputName  | No  |  string  |  Input name attribute |
+| inputName  | No  |  string  |  Input type; `input` or `textarea` |
 | fromBound  | No  |  string  |  Dadata bound type FROM |
 | toBound  | No  |  string  |  Dadata bound type TO |
 | highlightClassName  | No  |  string  |  CSS class name applied to highlighted text |
