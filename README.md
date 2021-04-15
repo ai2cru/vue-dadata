@@ -64,6 +64,8 @@ export default {
 | classes  | No  |  string  |  Extra classes |
 | inputName  | No  |  string  |  Input name attribute |
 | inputType  | No  |  string  |  Input type; `input` or `textarea` |
+| textareaRows  | No  |  Number  |  Rows number for textarea |
+
 | fromBound  | No  |  string  |  Dadata bound type FROM |
 | toBound  | No  |  string  |  Dadata bound type TO |
 | highlightClassName  | No  |  string  |  CSS class name applied to highlighted text |

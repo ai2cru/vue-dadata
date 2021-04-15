@@ -9,6 +9,7 @@
           :placeholder="placeholder"
           v-model="inputQuery"
           ref="inputText"
+          :rows="textareaRows"
           :autoComplete="autocomplete"
           @input="onInputChange"
           @keydown="onKeyPress"
@@ -87,6 +88,7 @@ export default class VueDadataTextarea extends Vue {
   @Prop(String) public readonly toBound?: BoundsType;
   @Prop(String) public readonly inputName?: string;
   @Prop(String) public readonly inputType?: string;
+  @Prop({ type: Number, default: 3 }) public readonly textareaRows?: number;
   @Prop({
     type: Object,
     default: () => ({
